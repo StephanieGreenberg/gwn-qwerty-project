@@ -1,0 +1,125 @@
+body {
+	margin:0;
+	padding:0;		
+}	
+
+#imagelist {
+	font-size:0;
+	margin: 0 auto;
+}
+
+#imagelist a {
+	margin:2px;
+	display: inline-block;
+}
+
+#imagelist img {
+	width:227px;
+	height:220px;
+	margin:0;
+	padding:0;
+}
+#imagelist img:hover {
+	opacity:.6;
+	-webkit-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+	transition: all 0.5s ease-out;
+}
+
+#quilt div {
+	width: 250px;
+	padding:15px;
+	padding-top:35px;
+	height: 250px;
+	background: #ff00ff;
+	text-align: center;
+	/*display: inline-block;*/
+	float: left;
+	line-height:30px;
+	border-radius:30px;
+	position:relative;
+
+	
+}
+
+#quilt div:after {
+ content: ' ';
+ background: rgba(255,255,255, 0.4);
+ position:absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index:1;
+}
+
+
+.add-story {
+	box-shadow: 5px 5px 5px #888888;
+	background-color:#a89ea4;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #a89ea4;
+	display:inline-block;
+	cursor:pointer;
+	width:200px;
+	color:#ffffff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:22px;
+	font-weight:bold;
+	letter-spacing:5px;
+	text-align:center;
+	padding:18px 24px;
+	text-decoration:none;
+
+	text-shadow:0px 1px 0px #a89ea4;
+	float:right;
+	position:absolute;
+	bottom:5px;
+	
+}
+.myButton:hover {
+	background-color:#b3b3b3;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+}
+.add-story:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ef027d), color-stop(1, #ff5bb0));
+	background:-moz-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
+	background:-webkit-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
+	background:-o-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
+	background:-ms-linear-gradient(top, #ef027d 5%, #ff5bb0 100%);
+	background:linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef027d', endColorstr='#ff5bb0',GradientType=0);
+	background-color:#ef027d;
+}
+.add-story:active {
+}
+
+
+#quilt div:hover span { 
+	opacity:1;
+	
+}
+#quilt div span { 
+	position: relative;
+	z-index:2;
+	opacity:0;
+	text-align:center;
+	color: #000;
+    text-shadow: 1.5px 1.5px #fff;
+    line-height:10px;
+    font-weight:bolder;
+	margin-top:10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:25px;
+-webkit-transition: opacity 500ms ease-out 500ms;
+  -moz-transition: opacity 500ms ease-out 500ms;
+  -o-transition: opacity 500ms ease-out 500ms;
+  transition: opacity 500ms ease-out 500ms; 
+   }
